@@ -12,19 +12,19 @@ Machine Learning (ML), as the name suggests, lets the machine learn. Here, the m
 
 |Regression Algorithm|Clustering Algorithm|Regularization Method|
 |:-:|:-:|:-:|
-|![](./img/ch2/2.1/1.jpg)|![](./img/ch2/2.1/2.jpg)|![](./img/ch2/2.1/3.jpg )|
+|![](img/ch2/2.1/1.jpg)|![](img/ch2/2.1/2.jpg)|![](img/ch2/2.1/3.jpg )|
 
 | Decision Tree Learning | Bayesian Methods | Kernel-Based Algorithms |
 |:-:|:-:|:-:|
-|![](./img/ch2/2.2.4.png)|![](./img/ch2/2.1/5.jpg)|![](./img/ch2/2.1/6.jpg )|
+|![](img/ch2/2.2.4.png)|![](img/ch2/2.1/5.jpg)|![](img/ch2/2.1/6.jpg )|
 
 |Clustering Algorithm|Association Rule Learning|Artificial Neural Network|
 |:-:|:-:|:-:|
-|![](./img/ch2/2.1/7.jpg)|![](./img/ch2/2.2.8.png)|![](./img/ch2/2.2.09.png )|
+|![](img/ch2/2.1/7.jpg)|![](img/ch2/2.2.8.png)|![](img/ch2/2.2.09.png )|
 
 |Deep Learning|Lower Dimensional Algorithm|Integrated Algorithm|
 |:-:|:-:|:-:|
-|![](./img/ch2/2.2.10.png)|![](./img/ch2/2.2.11.png)|![](./img/ch2/2.2.12.png )|
+|![](img/ch2/2.2.10.png)|![](img/ch2/2.2.11.png)|![](img/ch2/2.2.12.png )|
 
 ## 2.3 Supervised learning, unsupervised learning, semi-supervised learning, weak supervision learning?
 There are different ways to model a problem, depending on the type of data. According to different learning methods and input data, machine learning is mainly divided into the following four learning methods.
@@ -95,7 +95,7 @@ For example, Full Connected (FC) neural network, its rules include:
 
     **Neural Network Architecture**
     The picture below is a neural network system, which consists of many layers. The input layer is responsible for receiving information, such as a picture of a cat. The output layer is the result of the computer's judgment on this input information, it is not a cat. The hidden layer is the transfer and processing of input information.
-    ![](./img/ch2/2.5.1.png)
+    ![](img/ch2/2.5.1.png)
 
 ## 2.7 Understanding Local Optimization and Global Optimization
 
@@ -138,7 +138,7 @@ Therefore, when using the classification model or the regression model in the ac
    3) False negatives (FN): the number of instances that are incorrectly divided into negative examples, that is, the number of instances that are actually positive but are classified as negative by the classifier;
    4) True negatives(TN): The number of negative cases that are correctly divided into negative examples, which are actually negative examples and are divided into negative examples by the classifier.
 
-![](./img/ch2/2.9/1.png)
+![](img/ch2/2.9/1.png)
 
 The figure above is the confusion matrix of these four terms, and the following is explained:
 1) P = TP + FN represents the number of samples that are actually positive examples.
@@ -184,7 +184,7 @@ In order to integrate the classification of multiple categories and evaluate the
 
 The ROC curve is an abbreviation for (Receiver Operating Characteristic Curve), which is a performance evaluation curve with sensitivity (true positive rate) as the ordinate and 1-specific (false positive rate) as the abscissa. . The ROC curves of different models for the same data set can be plotted in the same Cartesian coordinate system. The closer the ROC curve is to the upper left corner, the more reliable the corresponding model is. The model can also be evaluated by the area under the ROC curve (Area Under Curve, AUC). The larger the AUC, the more reliable the model.
 
-![](./img/ch2/2.7.3.png)
+![](img/ch2/2.7.3.png)
 
 Figure 2.7.3 ROC curve
 
@@ -283,7 +283,7 @@ $$
 Suppose there are two parameters, $A$ and $B$, in the function. When the parameters change, it is assumed that the function state will also change.
 As shown below:
 
-![](./img/ch2/2.16/1.jpg)
+![](img/ch2/2.16/1.jpg)
 
 To fit the discrete points in the graph, we need to find the best $A$ and $B$ as possible to make this line more representative of all the data. How to find the optimal solution, which needs to be solved using the cost function, taking the squared error cost function as an example, assuming the function is $h(x)=\theta_0x$.
 The main idea of ​​the square error cost function is to make the difference between the value given by the actual data and the corresponding value of the fitted line, and find the difference between the fitted line and the actual line. In practical applications, in order to avoid the impact of individual extreme data, a similar variance is used to take one-half of the variance to reduce the impact of individual data. Therefore, the cost function is derived:
@@ -291,10 +291,10 @@ $$
 J(\theta_0, \theta_1) = \frac{1}{m}\sum_{i=1}^m(h(x^{(i)})-y^{(i)})^2
 $$
 
-**The optimal solution is the minimum value of the cost function **$\min J(\theta_0, \theta_1) ​$. If it is a parameter, the cost function is generally visualized by a two-dimensional curve. If it is 2 parameters, the cost function can see the effect through the 3D image. The more parameters, the more complicated.
+**The optimal solution is the minimum value of the cost function**$\min J(\theta_0, \theta_1) ​$. If it is a parameter, the cost function is generally visualized by a two-dimensional curve. If it is 2 parameters, the cost function can see the effect through the 3D image. The more parameters, the more complicated.
 When the parameter is 2, the cost function is a three-dimensional image.
 
-![](./img/ch2/2.16/2.jpg)
+![](img/ch2/2.16/2.jpg)
 
 ### 2.10.3 Why is the cost function non-negative?
 There is a lower bound on the objective function. In the optimization process, if the optimization algorithm can reduce the objective function continuously, according to the monotonically bounded criterion, the optimization algorithm can prove that the convergence is effective.
@@ -319,7 +319,7 @@ Where $z ​$ represents the input of the neuron and $\sigma ​$ represents the
 
 *Note*: The activation function commonly used in neural networks is the sigmoid function. The curve of this function is as follows:
 
-![](./img/ch2/2.18/1.jpg)
+![](img/ch2/2.18/1.jpg)
 
 Compare the two points of 0.88 and 0.98 as shown:
 Assume that the target is to converge to 1.0. 0.88 is farther from the target 1.0, the gradient is larger, and the weight adjustment is larger. 0.98 is closer to the target 1.0, the gradient is smaller, and the weight adjustment is smaller. The adjustment plan is reasonable.
@@ -340,9 +340,10 @@ $$
 $$
 
 The larger the error, the larger the gradient, the faster the weights $w$ and offset $b$ are adjusted, and the faster the training.
-**The quadratic cost function is suitable for the case where the output neuron is linear, and the cross entropy cost function is suitable for the case where the output neuron is a sigmoid function. **
+**The quadratic cost function is suitable for the case where the output neuron is linear, and the cross entropy cost function is suitable for the case where the output neuron is a sigmoid function.**
 
 3. **log-likelihood cost**:
+
 Log-likelihood functions are commonly used as cost functions for softmax regression. The common practice in deep learning is to use softmax as the last layer. The commonly used cost function is the log-likelihood cost function.
 The combination of log-likelihood cost function and softmax and the combination of cross-entropy and sigmoid function are very similar. The log-likelihood cost function can be reduced to the form of a cross-entropy cost function in the case of two classifications.
 In tensorflow:
@@ -354,9 +355,11 @@ The cross entropy function used with softmax: `torch.nn.CrossEntropyLoss()`.
 
 ### 2.10.5 Why use cross entropy instead of quadratic cost function
 1. **Why not use the quadratic cost function**
+
 As you can see from the previous section, the partial derivative of the weight $w$ and the offset $b$ is $\frac{\partial J}{\partial w}=(ay)\sigma'(z)x$,$\frac {\partial J}{\partial b}=(ay)\sigma'(z)$, the partial derivative is affected by the derivative of the activation function, and the derivative of the sigmoid function is very small when the output is close to 0 and 1, which causes some instances to be Learning very slowly when starting training.
 
 2. **Why use cross entropy**
+
 The gradient of the cross entropy function weights $w$ and the offset $b$ is derived as:
 
 $$
@@ -490,6 +493,7 @@ $$
 It can be seen that the log-like loss function and the log-likelihood function of the maximum likelihood estimation are essentially the same. So logistic regression directly uses the logarithmic loss function.
 
 ### 2.11.4 How does the logarithmic loss function measure loss?
+
 Example:
 In the Gaussian distribution, we need to determine the mean and standard deviation.
 How to determine these two parameters? Maximum likelihood estimation is a more common method. The goal of maximum likelihood is to find some parameter values ​​whose distributions maximize the probability of observing the data.
@@ -502,7 +506,6 @@ $$
 P(x_i;\mu,\sigma)=\frac{1}{\sigma \sqrt{2\pi}}\exp
 \left( - \frac{(x_i-\mu)^2}{2\sigma^2} \right)
 $$
-
 
 3. Its joint probability is
      $$
@@ -552,11 +555,13 @@ $$
 5. In machine learning, the gradient descent method mainly includes stochastic gradient descent method and batch gradient descent method.
 
 ### 2.12.2 What are the disadvantages of the gradient descent method?
+
 1. Convergence slows down near the minimum value.
 2. There may be some problems when searching in a straight line.
 3. It may fall "zigzag".
 
 Gradient concepts need to be noted:
+
 1. A gradient is a vector, that is, it has a direction and a size;
 2. The direction of the gradient is the direction of the maximum direction derivative;
 3. The value of the gradient is the value of the maximum direction derivative.
@@ -564,7 +569,7 @@ Gradient concepts need to be noted:
 ### 2.12.3 Gradient descent method intuitive understanding?
 Classical illustration of the gradient descent method:
 
-![](./img/ch2/2.25/1.png)
+![](img/ch2/2.25/1.png)
 
 Visualization example:
 > From the above picture, if at the beginning, we are somewhere on a mountain, because there are strangers everywhere, we don’t know the way down the mountain, so we can only explore the steps based on intuition, in the process, Every time you go to a position, it will solve the gradient of the current position, go down one step along the negative direction of the gradient, that is, the current steepest position, and then continue to solve the current position gradient, and the steepest position along this step. The easiest place to go down the mountain. Constantly cycle through the gradients, and so on, step by step, until we feel that we have reached the foot of the mountain. Of course, if we go on like this, it is possible that we cannot go to the foot of the mountain, but to the low point of a certain local peak.
@@ -574,7 +579,7 @@ Thus, as can be seen from the above explanation, the gradient descent does not n
 
 1. Initialize the parameters and randomly select any number within the range of values;
 2. Iterative operation:
- a) calculate the current gradient;
+a) calculate the current gradient;
 b) modify the new variable;
 c) calculate one step towards the steepest downhill direction;
 d) determine whether termination is required, if not, return a);
@@ -615,7 +620,7 @@ $$
 $$
 5) After the update is completed, transfer to 1).
 
-**Example **. Take linear regression as an example.
+**Example**. Take linear regression as an example.
 Suppose the sample is
 $$
 (x^{(0)}_1,x^{(0)}_2,...,x^{(0)}_n,y_0),(x^{(1)}_1,x^{(1 )}_2,...,x^{(1)}_n,y_1),...,
@@ -643,11 +648,11 @@ Out, the gradient direction of the current position is determined by all samples
 
 ### 2.12.5 How to tune the gradient descent method?
 When the gradient descent method is actually used, each parameter index can not reach the ideal state in one step, and the optimization of the gradient descent method is mainly reflected in the following aspects:
-1. **Algorithm iteration step $\alpha$ selection. **
+1. **Algorithm iteration step $\alpha$ selection.**
     When the algorithm parameters are initialized, the step size is sometimes initialized to 1 based on experience. The actual value depends on the data sample. You can take some values ​​from big to small, and run the algorithm to see the iterative effect. If the loss function is smaller, the value is valid. If the value is invalid, it means to increase the step size. However, the step size is too large, sometimes causing the iteration speed to be too fast and missing the optimal solution. The step size is too small, the iteration speed is slow, and the algorithm runs for a long time.
-2. **The initial value selection of the parameter. **
+2. **The initial value selection of the parameter.**
     The initial values ​​are different, and the minimum values ​​obtained may also be different. It is possible to obtain a local minimum due to the gradient drop. If the loss function is a convex function, it must be the optimal solution. Due to the risk of local optimal solutions, it is necessary to run the algorithm with different initial values ​​multiple times, the minimum value of the key loss function, and the initial value of the loss function minimized.
-3. **Standardization process. **
+3. **Standardization process.**
     Due to the different samples, the range of feature values ​​is different, resulting in slow iteration. In order to reduce the influence of feature values, the feature data can be normalized so that the new expectation is 0 and the new variance is 1, which can save the algorithm running time.
 
 ### 2.12.7 What is the difference between random gradients and batch gradients?
@@ -665,7 +670,7 @@ J(\theta_0, \theta_1, ... , \theta_n) =
 $$
 Among them, $m $ is the number of samples, and $j $ is the number of parameters.
 
-1, **batch gradient descent solution ideas are as follows: **
+1. **Batch gradient descent solution ideas are as follows:**
 
 a) Get the gradient corresponding to each $\theta ​$:
 $$
@@ -680,7 +685,7 @@ $$
 c) It can be noticed from the above equation that although it is a global optimal solution, all data of the training set is used for each iteration. If the sample data is large, the iteration speed of this method is very slow.
 In contrast, a random gradient drop can avoid this problem.
 
-2. **The solution to the stochastic gradient descent is as follows: **
+2. **The solution to the stochastic gradient descent is as follows:**
 a) Compared to all training samples compared to the batch gradient drop, the loss function in the stochastic gradient descent method corresponds to the granularity of each sample in the training set.
 The loss function can be written in the form of
 $$
@@ -696,11 +701,11 @@ $$
 c) The random gradient descent is iteratively updated by each sample.
 One problem associated with stochastic gradient descent is that the noise is much lower than the batch gradient, so that the stochastic gradient descent is not the direction of overall optimization for each iteration.
 
-**summary:**
+**Summary:**
 The stochastic gradient descent method and the batch gradient descent method are relatively extreme, and the simple comparison is as follows:
 
 | Method | Features |
-| :----------: | :----------------------------------- ------------------------ |
+| :----: | :------- |
 | Batch gradient descent | a) Use all data to gradient down. b) The batch gradient descent method is slow in training when the sample size is large. |
 | Stochastic Gradient Descent | a) Stochastic gradient descent with a sample to gradient down. b) Training is fast.
 c) The stochastic gradient descent method uses only one sample to determine the direction of the gradient, which may result in a solution that is not optimal.
@@ -708,7 +713,7 @@ d) In terms of convergence speed, the stochastic gradient descent method iterate
 
 The following describes a small batch gradient descent method that combines the advantages of both methods.
 
-3, **small batch (mini-batch) gradient drop solution is as follows **
+3. **Small batch (mini-batch) gradient drop solution is as follows**
 For data with a total of $m​$ samples, according to the sample data, select $n(1< n< m)​$ subsamples to iterate. Its parameter $\theta​$ updates the $\theta_i​$ formula in the gradient direction as follows:
 $$
 \theta_i = \theta_i - \alpha \sum^{t+n-1}_{j=t}
@@ -718,8 +723,8 @@ $$
 ### 2.12.8 Comparison of various gradient descent methods
 The table below briefly compares the difference between stochastic gradient descent (SGD), batch gradient descent (BGD), small batch gradient descent (mini-batch GD), and online GD:
 
-|BGD|SGD|GD|Mini-batch GD|Online GD|
-|:-:|:-:|:-:|:-:|:-:|:-:|
+|| BGD | SGD | Mini-batch GD | Online GD |
+|:--:|:----:|:---:|:-------------:|:---------:|
 | training set | fixed | fixed | fixed | real-time update |
 |Single iteration sample number | Whole training set | Single sample | Subset of training set | According to specific algorithm |
 | Algorithm Complexity | High | Low | General | Low |
@@ -779,7 +784,7 @@ If you summarize the LDA idea in one sentence, that is, "the variance within the
 ### 2.14.2 Graphical LDA Core Ideas
 Assume that there are two types of data, red and blue. These data features are two-dimensional, as shown in the following figure. Our goal is to project these data into one dimension, so that the projection points of each type of similar data are as close as possible, and the different types of data are as far as possible, that is, the distance between the red and blue data centers in the figure is as large as possible.
 
-![](./img/ch2/2.29/1.png)
+![](img/ch2/2.29/1.png)
 
 The left and right images are two different projections.
 
@@ -880,7 +885,7 @@ The PCA can solve the problem that there are too many data features or cumbersom
 
 Suppose the data set is m n-dimensional, $(x^{(1)}, x^{(2)}, \cdots, x^{(m)})$. If n=2, you need to reduce the dimension to $n'=1$. Now you want to find the data of a dimension that represents these two dimensions. The figure below has $u_1, u_2$ two vector directions, but which vector is what we want, can better represent the original data set?
 
-![](./img/ch2/2.34/1.png)
+![](img/ch2/2.34/1.png)
 
 As can be seen from the figure, $u_1$ is better than $u_2$, why? There are two main evaluation indicators:
 1. The sample point is close enough to this line.
@@ -992,7 +997,7 @@ The eigenvalue decomposition of the covariance matrix is ​​performed in a hi
 ### 2.16.1 Common methods for model evaluation?
 In general, a single scoring standard cannot fully evaluate a machine learning model. Using only good and bad to deviate from the real scene to evaluate a model is a poor way to evaluate. The following is a description of commonly used classification models and regression model evaluation methods.
 
-**Classification method commonly used in classification models: **
+**Classification method commonly used in classification models:**
 
 |Indicators|Description|
 |:-:|:-:|
@@ -1018,7 +1023,7 @@ In general, a single scoring standard cannot fully evaluate a machine learning m
 
 In machine learning, Bias (variation), Error (error), and Variance (variance) have the following differences and connections:
 
-**For Error **:
+**For Error:**
 
 - Error: In general, we refer to the difference between the actual predicted output of the learner and the true output of the sample as the "error".
 
@@ -1043,7 +1048,7 @@ Noise: Describes the lower bound of the expected generalization error that any l
 - The smaller the Variance, the higher the generalization of the model; conversely, the lower the ability of the model to generalize.
 - If the model has a good fitting effect on the training set, but the fitting effect on the test set is relatively poor, the variance is large, indicating that the stability of the model is poor. This phenomenon may be due to the model training set. Caused by the fit. As shown in the right column of the figure below.
 
-> ![](./img/ch2/2.16.20.1.png)
+> ![](img/ch2/2.16.20.1.png)
 >
 
 ### 2.16.3 Empirical error and generalization error
@@ -1056,7 +1061,7 @@ Generalization error: The error of the model on the new sample set (test set) is
 Under-fitting is different from over-fitting plots depending on the coordinate method.
 1. **The horizontal axis is the number of training samples and the vertical axis is the error**
 
-![](./img/ch2/2.16.4.1.jpg)
+![](img/ch2/2.16.4.1.jpg)
 
 As shown in the figure above, we can visually see the difference between under-fitting and over-fitting:
 
@@ -1068,7 +1073,7 @@ The model is normal: there are relatively low deviations and variances on both t
 
 2. **The horizontal axis is the complexity of the model and the vertical axis is the error**
 
-![](./img/ch2/2.16.4.2.png)
+![](img/ch2/2.16.4.2.png)
 
 The red line is the Error on the test set, and the blue line is the Error on the training set.
 
@@ -1080,7 +1085,7 @@ The model is normal: the model complexity control is optimal at point B.
 
 3. **The horizontal axis is the regular term coefficient and the vertical axis is the error**
 
-![](./img/ch2/2.16.4.3.png)
+![](img/ch2/2.16.4.3.png)
 
 The red line is the Error on the test set, and the blue line is the Error on the training set.
 
@@ -1121,7 +1126,9 @@ There are many ways to cross-validate, but the most common ones are: leave a cro
 2. In each case, train the model with the training set and test the model with the test set to calculate the generalization error of the model.
 3. Cross-validation is repeated K times, each verification is performed, the average K times results or other combination methods are used, and finally a single estimation is obtained, and the final generalization error of the model is obtained.
 4. In the case of K, the generalization error of the model is averaged to obtain the final generalization error of the model.
+
 **Note**:
+
 1. Generally 2<=K<=10. The advantage of k-fold cross-validation is that it repeatedly uses randomly generated sub-samples for training and verification. Each time the results are verified once, 10-fold cross-validation is the most commonly used.
 2. The number of samples in the training set should be sufficient, generally at least 50% of the total number of samples.
 3. The training set and test set must be evenly sampled from the complete data set. The purpose of uniform sampling is to reduce the deviation between the training set, the test set, and the original data set. When the number of samples is sufficient, the effect of uniform sampling can be achieved by random sampling.
@@ -1175,7 +1182,7 @@ The ROC curve is calculated by setting a continuous variable to a plurality of d
 
 For classifiers, or classification algorithms, the evaluation indicators mainly include precision, recall, and F-score. The figure below is an example of a ROC curve.
 
-![](./img/ch2/2.40.10/1.png)
+![](img/ch2/2.40.10/1.png)
 
 The abscissa of the ROC curve is the false positive rate (FPR) and the ordinate is the true positive rate (TPR). among them
 $$
@@ -1199,12 +1206,12 @@ step:
 3. Select a different threshold each time to get a set of FPR and TPR, which is a point on the ROC curve. In this way, a total of 20 sets of FPR and TPR values ​​were obtained. The FPR and TPR are briefly understood as follows:
 4. Draw according to each coordinate point in 3).
 
-![](./img/ch2/2.40.11/1.jpg)
+![](img/ch2/2.40.11/1.jpg)
 
 ### 2.16.13 How to calculate TPR, FPR?
-1, analysis of data
+1. Analysis of data
 Y_true = [0, 0, 1, 1]; scores = [0.1, 0.4, 0.35, 0.8];
-2, the list
+2. The list
 
 | Sample | Predict the probability of belonging to P (score) | Real Category |
 | ---- | ---------------------- | -------- |
@@ -1267,6 +1274,7 @@ The positive and negative examples are as follows:
 
 Therefore:
 TPR = TP / (TP + FN) = 0.5; FPR = FP / (TN + FP) = 0;
+
 4. According to the TPR and FPR values, the FPR is plotted on the horizontal axis and the TPR is plotted on the vertical axis.
 
 ### 2.16.14 How to calculate Auc?
@@ -1283,7 +1291,7 @@ Because the ROC curve has a very good property: when the distribution of positiv
 ### 2.16.17 Intuitive understanding of AUC
 The figure below shows the values ​​of the three AUCs:
 
-![](./img/ch2/2.40.15/1.png)
+![](img/ch2/2.40.15/1.png)
 
 AUC is an evaluation index to measure the pros and cons of the two-category model, indicating the probability that the positive example is in front of the negative example. Other evaluation indicators have accuracy, accuracy, and recall rate, and AUC is more common than the three.
 Generally, in the classification model, the prediction results are expressed in the form of probability. If the accuracy is to be calculated, a threshold is usually set manually to convert the corresponding probability into a category, which greatly affects the accuracy of the model. Rate calculation.
@@ -1291,19 +1299,19 @@ Example:
 
 Now suppose that a trained two-classifier predicts 10 positive and negative samples (5 positive cases and 5 negative examples). The best prediction result obtained by sorting the scores in high to low is [1, 1, 1, 1, 1, 0, 0, 0, 0, 0], that is, 5 positive examples are ranked in front of 5 negative examples, and the positive example is 100% in front of the negative example. Then draw its ROC curve, since it is 10 samples, we need to draw 10 points in addition to the origin, as follows:
 
-![](./img/ch2/2.16.17-1.png)
+![](img/ch2/2.16.17-1.png)
 
 The method of traversing starts from left to right according to the score of the sample prediction result. Starting from the origin, every time you encounter 1, move the y-axis in the positive direction of the y-axis with a minimum step size of 1 unit, here is 1/5=0.2; every time you encounter 0, move to the x-axis positive direction, the x-axis minimum step size is 1 Unit, here is also 0.2. It is not difficult to see that the AUC of the above figure is equal to 1, which confirms that the probability that the positive example is in front of the negative example is indeed 100%.
 
 Assume that the prediction result sequence is [1, 1, 1, 1, 0, 1, 0, 0, 0, 0].
 
-![](./img/ch2/2.16.17-2.png)
+![](img/ch2/2.16.17-2.png)
 
 Calculate the AUC of the above figure is 0.96 and the probability of calculating the positive example is 0.8 × 1 + 0.2 × 0.8 = 0.96 in front of the negative example, and the area of ​​the shadow in the upper left corner is the probability that the negative example is in front of the positive example. × 0.2 = 0.04.
 
 Assume that the prediction result sequence is [1, 1, 1, 0, 1, 0, 1, 0, 0, 0].
 
-![](./img/ch2/2.16.17-3.png)
+![](img/ch2/2.16.17-3.png)
 
 Calculate the AUC of the above figure is 0.88 and the probability of calculating the positive example and the front of the negative example is equal to 0.6 × 1 + 0.2 × 0.8 + 0.2 × 0.6 = 0.88. The area of ​​the shaded part in the upper left corner is the negative example in front of the positive example. The probability is 0.2 × 0.2 × 3 = 0.12.
 
@@ -1311,7 +1319,7 @@ Calculate the AUC of the above figure is 0.88 and the probability of calculating
 
 Different errors can come at different costs. Taking the dichotomy as an example, set the cost matrix as follows:
 
-![](./img/ch2/2-1.png)
+![](img/ch2/2-1.png)
 
 When the judgment is correct, the value is 0. When it is incorrect, it is $Cost_{01} $ and $Cost_{10} $ respectively.
 
@@ -1345,7 +1353,7 @@ Note: Each point of the ROC corresponds to a line on the cost plane.
 
 For example, on the ROC (TPR, FPR), FNR=1-TPR is calculated, and a line segment from (0, FPR) to (1, FNR) is drawn on the cost plane, and the area is the expected overall cost under the condition. The area under the bounds of all segments, the expected overall cost of the learner under all conditions.
 
-![](./img/ch2/2.16.18.1.png)
+![](img/ch2/2.16.18.1.png)
 
 ### 2.16.19 What are the comparison test methods for the model?
 Correctness analysis: model stability analysis, robustness analysis, convergence analysis, trend analysis, extreme value analysis, etc.
@@ -1377,7 +1385,7 @@ Classification learning algorithms usually assume that the number of training ex
 ### 2.16.26 Common category imbalance problem solving method
 To prevent the impact of category imbalance on learning, it is necessary to deal with the problem of classification imbalance before constructing the classification model. The main solutions are:
 
-1, expand the data set
+1. Expand the data set
 
 Add data that contains small sample data, and more data can get more distribution information.
 
@@ -1402,19 +1410,19 @@ ADASYN: Uses a weighted distribution for different minority categories of sample
 
 If the current evaluation indicator does not apply, you should look for other convincing evaluation indicators. For example, the accuracy index is not applicable or even misleading in the classification task with unbalanced categories. Therefore, in the category unbalanced classification task, more convincing evaluation indicators are needed to evaluate the classifier.
 
-5, choose a new algorithm
+5. Choose a new algorithm
 
 Different algorithms are suitable for different tasks and data, and should be compared using different algorithms.
 
-6, data cost weighting
+6. Data cost weighting
 
 For example, when the classification task is to identify the small class, the weight of the small class sample data of the classifier can be added, and the weight of the large sample can be reduced, so that the classifier concentrates on the small sample.
 
-7, the conversion problem thinking angle
+7. The conversion problem thinking angle
 
 For example, in the classification problem, the sample of the small class is used as the abnormal point, and the problem is transformed into the abnormal point detection or the change trend detection problem. Outlier detection is the identification of rare events. The change trend detection is distinguished from the abnormal point detection in that it is identified by detecting an unusual change trend.
 
-8, the problem is refined and analyzed
+8. The problem is refined and analyzed
 
 Analyze and mine the problem, divide the problem into smaller problems, and see if these small problems are easier to solve.
 
@@ -1434,7 +1442,7 @@ Pruning: Decision trees are easy to overfit, generally requiring pruning, reduci
 
 ### 2.17.3 Decision Tree Learning Basic Algorithm
 
-![](./img/ch2/2-5.png)
+![](img/ch2/2-5.png)
 
 ### 2.17.4 Advantages and disadvantages of decision tree algorithms
 
@@ -1448,19 +1456,19 @@ Pruning: Decision trees are easy to overfit, generally requiring pruning, reduci
 
 4. The decision tree algorithm can handle numbers and data categories compared to other algorithms that intelligently analyze a type of variable.
 
-5, able to handle the problem of multiple output.
+5. able to handle the problem of multiple output.
 
 6. Not sensitive to missing values.
 
-7, can handle irrelevant feature data.
+7. can handle irrelevant feature data.
 
-8, high efficiency, decision tree only needs to be constructed once, repeated use, the maximum number of calculations per prediction does not exceed the depth of the decision tree.
+8. high efficiency, decision tree only needs to be constructed once, repeated use, the maximum number of calculations per prediction does not exceed the depth of the decision tree.
 
 **The disadvantages of the decision tree algorithm**:
 
 1. It is hard to predict the field of continuity.
 
-2, easy to appear over-fitting.
+2. easy to appear over-fitting.
 
 3. When there are too many categories, the error may increase faster.
 
@@ -1522,7 +1530,7 @@ Support Vector Machine (SVM): The meaning is a classifier that supports vector o
 
 In a two-dimensional environment, points R, S, G and other points near the middle black line can be seen as support vectors, which can determine the specific parameters of the classifier, black line.
 
-![](./img/ch2/2-6.png)
+![](img/ch2/2-6.png)
 
 The support vector machine is a two-class model. Its purpose is to find a hyperplane to segment the sample. The principle of segmentation is to maximize the interval and finally transform it into a convex quadratic programming problem. The simple to complex models include:
 
@@ -1562,17 +1570,17 @@ The wide application of the kernel function method is inseparable from its chara
 
 1. The dual problem turns the constraint in the original problem into the equality constraint in the dual problem. The dual problem is often easier to solve.
 
-2, you can naturally refer to the kernel function (the Lagrangian expression has an inner product, and the kernel function is also mapped by the inner product).
+2. You can naturally refer to the kernel function (the Lagrangian expression has an inner product, and the kernel function is also mapped by the inner product).
 
 3. In the optimization theory, the objective function f(x) can take many forms: if the objective function and the constraint are both linear functions of the variable x, the problem is called linear programming; if the objective function is a quadratic function, the constraint For a linear function, the optimization problem is called quadratic programming; if the objective function or the constraint is a nonlinear function, the optimization problem is called nonlinear programming. Each linear programming problem has a dual problem corresponding to it. The dual problem has very good properties. Here are a few:
 
-a, the duality of the dual problem is the original problem;
+a. The duality of the dual problem is the original problem;
 
-b, whether the original problem is convex or not, the dual problem is a convex optimization problem;
+b. Whether the original problem is convex or not, the dual problem is a convex optimization problem;
 
-c, the dual problem can give a lower bound on the original problem;
+c. The dual problem can give a lower bound on the original problem;
 
-d, when certain conditions are met, the original problem is completely equivalent to the solution to the dual problem.
+d. When certain conditions are met, the original problem is completely equivalent to the solution to the dual problem.
 
 ### 2.18.5 How to understand the dual problem in SVM
 
@@ -1634,11 +1642,11 @@ $$
 
 ### 2.18.7 What are the common kernel functions?
 | Kernel Functions | Expressions | Notes |
-| ---------------------------- | -------------------- ---------------------------------------- | --------- -------------------------- |
-Linear Kernel Linear Kernel | $k(x,y)=xy$ | |
-Polynomial Kernel Polynomial Kernel | $k(x,y)=(ax^{t}y+c)^{d}$ | $d>=1$ is the number of polynomials |
-Exponential Kernel Exponent Kernel Function | $k(x,y)=exp(-\frac{\left \|x-y \right \|}{2\sigma ^{2}})$ | $\sigma>0$ |
-Gaussian Kernel Gaussian Kernel Function | $k(x,y)=exp(-\frac{\left \|xy \right \|^{2}}{2\sigma ^{2}})$ | $\sigma $ is the bandwidth of the Gaussian kernel, $\sigma>0$, |
+| ---------------- | ----------- | ----- |
+| Linear Kernel Linear Kernel | $k(x,y)=xy$ | |
+| Polynomial Kernel Polynomial Kernel | $k(x,y)=(ax^{t}y+c)^{d}$ | $d>=1$ is the number of polynomials |
+| Exponential Kernel Exponent Kernel Function | $k(x,y)=exp(-\frac{\left \|x-y \right \|}{2\sigma ^{2}})$ | $\sigma>0$ |
+| Gaussian Kernel Gaussian Kernel Function | $k(x,y)=exp(-\frac{\left \|xy \right \|^{2}}{2\sigma ^{2}})$ | $\sigma $ is the bandwidth of the Gaussian kernel, $\sigma>0$, |
 | Laplacian Kernel Laplacian Kernel | $k(x,y)=exp(-\frac{\left \|x-y \right|}{\sigma})$ | $\sigma>0$ |
 | ANOVA Kernel | $k(x,y)=exp(-\sigma(x^{k}-y^{k})^{2})^{d}$ | |
 | Sigmoid Kernel | $k(x,y)=tanh(ax^{t}y+c)$ | $tanh$ is a hyperbolic tangent function, $a>0,c<0$ |
@@ -1659,11 +1667,11 @@ Features:
 
 (6) A few support vectors determine the final result, which not only helps us to grasp the key samples, “cull” a large number of redundant samples, but also destined that the method is not only simple, but also has good “robustness”. This "robustness" is mainly reflected in:
 
-1 Adding or deleting non-support vector samples has no effect on the model;
+1. Adding or deleting non-support vector samples has no effect on the model;
 
-2 Support vector sample sets have certain robustness;
+2. Support vector sample sets have certain robustness;
 
-3 In some successful applications, the SVM method is not sensitive to the selection of cores.
+3. In some successful applications, the SVM method is not sensitive to the selection of cores.
 
 (7) The SVM learning problem can be expressed as a convex optimization problem, so the global minimum of the objective function can be found using a known effective algorithm. Other classification methods (such as rule-based classifiers and artificial neural networks) use a greedy learning-based strategy to search for hypothesis space. This method generally only obtains local optimal solutions.
 
@@ -1695,13 +1703,14 @@ Same point:
 
 - LR and SVM are both **classification** algorithms
 - Both LR and SVM are **supervised learning** algorithms.
-- Both LR and SVM are ** discriminant models**.
+- Both LR and SVM are **discriminant models**.
 - If the kernel function is not considered, both LR and SVM are **linear classification** algorithms, which means that their classification decision surfaces are linear.
    Note: LR can also use the kernel function. But LR usually does not use the kernel function method. (**The amount of calculation is too large**)
 
-difference:
+Differences:
 
-**1, LR uses log loss, SVM uses hinge loss. **
+**1. LR uses log loss, SVM uses hinge loss.**
+
 Logistic regression loss function:
 $$
 J(\theta)=-\frac{1}{m}\left[\sum^m_{i=1}y^{(i)}logh_{\theta}(x^{(i)})+ ( 1-y^{(i)})log(1-h_{\theta}(x^{(i)}))\right]
@@ -1714,7 +1723,7 @@ The logistic regression method is based on probability theory. The probability t
 
 The support vector machine is based on the principle of geometric interval maximization，and it is considered that the classification plane with the largest geometric interval is the optimal classification plane.
 
-2. **LR is sensitive to outliers and SVM is not sensitive to outliers**.
+**2. LR is sensitive to outliers and SVM is not sensitive to outliers**.
 
 The support vector machine only considers points near the local boundary line, while logistic regression considers the global. The hyperplane found by the LR model tries to keep all points away from him, and the hyperplane that the SVM looks for is to keep only those points closest to the middle dividing line as far away as possible, that is, only those samples that support vectors.
 
@@ -1722,24 +1731,28 @@ Support vector machines to change non-support vector samples do not cause change
 
 Changing any sample in a logistic regression can cause changes in the decision surface.
 
-**3, the calculation complexity is different. For massive data, SVM is less efficient and LR efficiency is higher**
+**3. the calculation complexity is different. For massive data, SVM is less efficient and LR efficiency is higher**
 
 When the number of samples is small and the feature dimension is low, the running time of SVM and LR is relatively short, and the SVM is shorter. For accuracy, LR is significantly higher than SVM. When the sample is slightly increased, the SVM runtime begins to grow, but the accuracy has surpassed LR. Although the SVM time is long, it is within the receiving range. When the amount of data grows to 20,000, when the feature dimension increases to 200, the running time of the SVM increases dramatically, far exceeding the running time of the LR. But the accuracy rate is almost the same as LR. (The main reason for this is that a large number of non-support vectors participate in the calculation, resulting in secondary planning problems for SVM)
 
-**4. Different ways of dealing with nonlinear problems, LR mainly relies on feature structure, and must combine cross-characteristics and feature discretization. SVM can also be like this, but also through the kernel (because only the support vector participates in the core calculation, the computational complexity is not high). ** (Because the kernel function can be used, the SVM can be efficiently processed by the dual solution. LR is poor when the feature space dimension is high.)
+**4. Different ways of dealing with nonlinear problems**
 
-**5, SVM loss function comes with regular! ! ! (1/2 ||w||^2 in the loss function), which is why SVM is the structural risk minimization algorithm! ! ! And LR must add a regular item to the loss function! ! ! **
+LR mainly relies on feature structure, and must combine cross-characteristics and feature discretization. SVM can also be like this, but also through the kernel (because only the support vector participates in the core calculation, the computational complexity is not high). (Because the kernel function can be used, the SVM can be efficiently processed by the dual solution. LR is poor when the feature space dimension is high.)
 
-6, SVM comes with ** structural risk minimization**, LR is ** empirical risk minimization**.
+**5. SVM loss function comes with regular**
 
-7, SVM will use the kernel function and LR generally does not use [nuclear function] (https://www.cnblogs.com/huangyc/p/9940487.html).
+1/2 ||w||^2 in the loss function, which is why SVM is the structural risk minimization algorithm! ! ! And LR must add a regular item to the loss function! ! !
+
+6. SVM comes with **structural risk minimization**, LR is **empirical risk minimization**.
+
+7. SVM will use the kernel function and LR generally does not use [nuclear function] (https://www.cnblogs.com/huangyc/p/9940487.html).
 
 ## 2.19 Bayesian classifier
 ### 2.19.1 Graphical Maximum Likelihood Estimation
 
 The principle of maximum likelihood estimation is illustrated by a picture, as shown in the following figure:
 
-![](./img/ch2/2.19.1.1.png)
+![](img/ch2/2.19.1.1.png)
 
 Example: There are two boxes with the same shape. There are 99 white balls and 1 black ball in the 1st box. There are 1 white ball and 99 black balls in the 2nd box. In one experiment, the black ball was taken out. Which box was taken out from?
 
@@ -1819,31 +1832,31 @@ The training set is as follows:
 
 Https://www.cnblogs.com/super-zhang-828/p/8082500.html
 
-| Number | Color | Roots | Knock | Texture | Umbilical | Tactile | Density | Sugar Content |
-| :--: | :--: | :-- | : :--: | :--: | :--: | :--: | :---: | :----: | --: |
-| 1 | Green | Condensation | Turbidity | Clear | Sag | Hard slip | 0.697 | 0.460 |
-| 2 | Black | Cursed | Dull | Clear | Sag | Hard slip | 0.774 | 0.376 |
-| 3 | Black | Cursed | Turbid | Clear | Hollow | Hard slip | 0.634 | 0.264 |
-4 | Green | Collapse | Dull | Clear | Hollow | Hard slip | 0.608 | 0.318 |
-| 5 | White | Cursed | Turbid | Clear | Sag | Hard slip | 0.556 | 0.215 |
-| 6 | Green | A little bit | 浊 | | Clear | slightly concave | soft sticky | 0.403 | 0.237 |
-| 7 | Black | Slightly 蜷 | 浊响 | Slightly sloppy | Slightly concave | Soft sticky | 0.481 | 0.149 |
-| 8 | Black | Slightly 蜷 | 浊 | | Clear | Slightly concave | Hard slip | 0.437 | 0.211 |
-| 9乌黑 | 蜷 蜷 | dull | slightly battered | slightly concave | hard slip | 0.666 | 0.091 |
-| 10 | Green | Tough | Crisp | Clear | Flat | Soft Sticky | 0.243 | 0.267 |
-| 11 | White | Hard | Crisp | Blur | Flat | Hard slip | 0.245 | 0.057 |
-| 12 | White | Collapse | Turbidity | Blur | Flat | Soft Sticky | 0.343 | 0.099 |
-| 13 | Green | Slightly 蜷 | 浊响 | Slightly smeared | Sag | Hard slip | 0.639 | 0.161 |
-| 14 | 白白 | 蜷 蜷 | dull | slightly paste | dent | hard slip | 0.657 | 0.198 |
-| 15 | black | slightly 蜷 | 浊 | | Clear | slightly concave | soft sticky | 0.360 | 0.370 |
-| 16 | White | Cursed | Turbid | Blurred | Flat | Hard slip | 0.593 | 0.042 |
-| 17 | Green | Collapse | Dull | Slightly Paste | Slightly concave | Hard slip | 0.719 | 0.103 |
+| Number | Color |        Roots       |  Knock |     Texture     |    Umbilical    |   Tactile   | Density | Sugar Content | Delicious |
+| :----: | :---: | :----------------: | :----: | :-------------: | :-------------: | :---------: | :-----: | :-----------: | :-------: |
+|    1   | Green | Rolled-up          | Turbid | Clear           | Sunken          | Hard slip   |   0.697 |         0.460 | True      |
+|    2   | Black | Rolled-up          | Dull   | Clear           | Sunken          | Hard slip   |   0.774 |         0.376 | True      |
+|    3   | Black | Rolled-up          | Turbid | Clear           | Sunken          | Hard slip   |   0.634 |         0.264 | True      |
+|    4   | Green | Rolled-up          | Dull   | Clear           | Sunken          | Hard slip   |   0.608 |         0.318 | True      |
+|    5   | White | Rolled-up          | Turbid | Clear           | Sunken          | Hard slip   |   0.556 |         0.215 | True      |
+|    6   | Green | Slightly rolled-up | Turbid | Clear           | Slightly sunken | Soft sticky |   0.403 |         0.237 | True      |
+|    7   | Black | Slightly rolled-up | Turbid | Slightly blurry | Slightly sunken | Soft sticky |   0.481 |         0.149 | True      |
+|    8   | Black | Slightly rolled-up | Turbid | Clear           | Slightly sunken | Hard slip   |   0.437 |         0.211 | True      |
+|    9   | Black | Slightly rolled-up | Dull   | Slightly blurry | Slightly sunken | Hard slip   |   0.666 |         0.091 | False     |
+|   10   | Green | Firm               | Crisp  | Clear           | Flat            | Soft sticky |   0.243 |         0.267 | False     |
+|   11   | White | Firm               | Crisp  | Blurry          | Flat            | Hard slip   |   0.245 |         0.057 | False     |
+|   12   | White | Rolled-up          | Turbid | Blurry          | Flat            | Soft sticky |   0.343 |         0.099 | False     |
+|   13   | Green | Slightly rolled-up | Turbid | Slightly blurry | Sunken          | Hard slip   |   0.639 |         0.161 | False     |
+|   14   | White | Slightly rolled-up | Dull   | Slightly blurry | Sunken          | Hard slip   |   0.657 |         0.198 | False     |
+|   15   | black | Slightly rolled-up | Turbid | Clear           | Slightly sunken | Soft sticky |   0.360 |         0.370 | False     |
+|   16   | White | Rolled-up          | Turbid | Blurry          | Flat            | Hard slip   |   0.593 |         0.042 | False     |
+|   17   | Green | Rolled-up          | Dull   | Slightly blurry | Slightly sunken | Hard slip   |   0.719 |         0.103 | False     |
 
 The following test example "Measure 1" is classified:
 
-Number | Color | Roots | Knock | Texture | Umbilical | Tactile | Density | Sugar Content |
-| :--: | :--: | :-- | : :--: | :--: | :--: | :--: | :---: | :----: | --: |
-| 1 | Green | Cursed | Turbid | Clear | Hollow | Hard slip | 0.697 | 0.460 | |
+| Number | Color |   Roots   |  Knock | Texture | Umbilical |  Tactile  | Density | Sugar Content | Delicious |
+| :----: | :---: | :--------:| :----: | :-----: | :-------: | :-------: | :-----: | :-----------: | :-------: |
+|   1    | Green | Rolled-up | Turbid | Clear   | Blurry    | Hard slip |   0.697 |         0.460 |     ?     |
 
 First, estimate the class prior probability $P(c_j)$, there is
 $$
@@ -1854,7 +1867,7 @@ $$
 $$
 Then, estimate the conditional probability for each attribute (here, for continuous attributes, assume they follow a normal distribution)
 
-![](./img/ch2/2.19.5C.png)
+![](img/ch2/2.19.5C.png)
 
 Then there is
 $$
@@ -1872,7 +1885,7 @@ $$
 
 ### 2.19.4 Naive Bayes Classifier
 
-Naïve Bayes adopts the "attribute conditional independence hypothesis". The basic idea of ​​the semi-simple Bayesian classifier is to properly consider the interdependence information between some attributes. ** One-Dependent Estimator (ODE) is one of the most commonly used strategies for semi-simple Bayesian classifiers. As the name implies, the sole dependency assumes that each attribute depends on at most one other attribute outside the category, ie
+Naïve Bayes adopts the "attribute conditional independence hypothesis". The basic idea of ​​the semi-simple Bayesian classifier is to properly consider the interdependence information between some attributes. **One-Dependent Estimator (ODE)** is one of the most commonly used strategies for semi-simple Bayesian classifiers. As the name implies, the sole dependency assumes that each attribute depends on at most one other attribute outside the category, ie
 $$
 P(x|c_i)=\prod_{j=1}^d P(x_j|c_i,{\rm pa}_j).
 $$
@@ -1941,7 +1954,7 @@ The above is the M step of the EM algorithm, $\sum\limits_{z^{(i)}}Q_i(z^{(i)})l
 
 Considering the formula (a) in the previous section, there are hidden variables in the expression. It is difficult to find the parameter estimation directly. The EM algorithm is used to iteratively solve the maximum value of the lower bound until convergence.
 
-![](./img/ch2/2.20.1.jpg)
+![](img/ch2/2.20.1.jpg)
 
 The purple part of the picture is our target model $p(x|\theta)$. The model is complex and difficult to find analytical solutions. In order to eliminate the influence of the hidden variable $z^{(i)}$, we can choose one not. The $r(x|\theta)$ model containing $z^{(i)}$ is such that it satisfies the condition $r(x|\theta) \leq p(x|\theta) $.
 
@@ -1986,23 +1999,23 @@ If the data set contains 10 photos, the photo contains both triangle and circle 
 
 
 
-![](./img/ch2/2.21.1.1.png)
+![](img/ch2/2.21.1.1.png)
 
 Figure 2.21.1.a
 
 As can be seen from the above figure, if only one feature is classified, the triangle and the circle are almost evenly distributed on this line segment, and it is difficult to linearly classify 10 photos. So what happens when you add a feature:
 
-![](./img/ch2/2.21.1.2.png)
+![](img/ch2/2.21.1.2.png)
 
 Figure 2.21.1.b
 
 After adding a feature, we found that we still couldn't find a straight line to separate the cat from the dog. So, consider adding another feature:
 
-![](./img/ch2/2.21.1.3.png)
+![](img/ch2/2.21.1.3.png)
 
 Figure 2.21.1.c
 
-![](./img/ch2/2.21.1.4.png)
+![](img/ch2/2.21.1.4.png)
 
 Figure 2.21.1.d
 
@@ -2020,31 +2033,31 @@ By analogy, if you continue to increase the number of features, the sample densi
 
 Let's look at what happens when you map the classification results of high-dimensional space to low-dimensional space.
 
-![](./img/ch2/2.21.1.5.png)
+![](img/ch2/2.21.1.5.png)
 
 Figure 2.21.1.e
 
 The above figure is the result of mapping the 3D feature space to the 2D feature space. Although the training samples are linearly separable in the high dimensional feature space, the results are reversed after mapping to the low dimensional space. In fact, increasing the number of features makes the high-dimensional space linearly separable, which is equivalent to training a complex nonlinear classifier in a low-dimensional space. However, this nonlinear classifier is too "smart" to learn only a few special cases. If it is used to identify test samples that have not appeared in the training sample, the results are usually not ideal and can cause over-fitting problems.
 
-![](./img/ch2/2.21.1.6a.png)
+![](img/ch2/2.21.1.6a.png)
 
 Figure 2.21.1.f
 
 The linear classifier with only two features shown in the above figure is divided into some training samples. The accuracy does not seem to be as high as in Figure 2.21.1.e. However, the generalization ability ratio of linear classifiers with two features is shown. A linear classifier with three features is stronger. Because the linear classifier with two features learns not only the special case, but an overall trend, which can be better distinguished for those samples that have never appeared before. In other words, by reducing the number of features, over-fitting problems can be avoided, thereby avoiding "dimensionality disasters."
 
-![](./img/ch2/2.21.1.6.png)
+![](img/ch2/2.21.1.6.png)
 
 From another perspective, the "dimensional disaster" is explained. Assuming that there is only one feature, the range of features is 0 to 1, and the eigenvalues ​​of each triangle and circle are unique. If we want the training sample to cover 20% of the eigenvalue range, then we need 20% of the total number of triangles and circles. After we add a feature, 45% (0.452 = 0.2) of the total number of triangles and circles is needed to continue covering 20% ​​of the eigenvalue range. After continuing to add a feature, 58% (0.583 = 0.2) of the total number of triangles and circles is required. As the number of features increases, more training samples are needed to cover 20% of the eigenvalue range. If there are not enough training samples, there may be over-fitting problems.
 
 Through the above example, we can see that the more the number of features, the more sparse the training samples will be, the less accurate the parameter estimates of the classifier will be, and the over-fitting problem will be more likely to occur. Another effect of the "dimension disaster" is that the sparsity of the training samples is not evenly distributed. The training samples at the center are more sparse than the surrounding training samples.
 
-![](./img/ch2/2.21.1.7.png)
+![](img/ch2/2.21.1.7.png)
 
 Suppose there is a two-dimensional feature space, such as the rectangle shown in Figure 8, with an inscribed circle inside the rectangle. As the sample closer to the center of the circle is sparse, those samples located at the four corners of the rectangle are more difficult to classify than the samples within the circle. When the dimension becomes larger, the capacity of the feature hyperspace does not change, but the capacity of the unit circle tends to zero. In the high-dimensional space, most of the training data resides in the corner of the feature hyperspace. Data scattered in the corner is harder to classify than data in the center.
 
 ### 2.21.2 How to avoid dimension disaster
 
-**To be improved! ! ! **
+**To be improved!!!**
 
 Solve the dimensional disaster problem:
 
@@ -2060,13 +2073,13 @@ Clustering is used to find the distribution structure inherent in data, either a
 
 1) In some recommendation systems, the type of new user needs to be determined, but it is not easy to define the “user type”. In this case, the original user data can be clustered first, and each cluster is clustered according to the clustering result. Defined as a class, and then based on these classes to train the classification model to identify the type of new user.
 
-![](./img/ch2/2.21.3.1.png)
+![](img/ch2/2.21.3.1.png)
 
 2) Dimensionality reduction is an important method to alleviate the dimensionality disaster. It is to transform the original high-dimensional attribute space into a low-dimensional "subspace" through some mathematical transformation. It is based on the assumption that although the data samples that people usually observe are high-dimensional, what is actually related to the learning task is a low-dimensional distribution. Therefore, the description of the data can be realized through the most important feature dimensions, which is helpful for the subsequent classification. For example, the Titanic on Kaggle was still a problem. By giving a person a number of characteristics such as age, name, gender, fare, etc., to determine whether it can survive in a shipwreck. This requires first feature screening to identify the main features and make the learned models more generalizable.
 
 Both clustering and dimensionality reduction can be used as preprocessing steps for classification and other issues.
 
-![](./img/ch2/2-19.jpg)
+![](img/ch2/2-19.jpg)
 
 But although they can achieve the reduction of data. However, the two objects are different, the clustering is for data points, and the dimension reduction is for the characteristics of the data. In addition, they have a variety of implementation methods. K-means, hierarchical clustering, density-based clustering, etc. are commonly used in clustering; PCA, Isomap, LLE, etc. are commonly used in dimension reduction.
 
@@ -2107,7 +2120,7 @@ Steps:
 According to the order of hierarchical decomposition, whether it is bottom-up or top-down, the hierarchical clustering algorithm is divided into a condensed hierarchical clustering algorithm and a split hierarchical clustering algorithm.
 The strategy of condensed hierarchical clustering is to first treat each object as a cluster, then merge the clusters into larger and larger clusters until all objects are in one cluster, or a certain termination condition is satisfied. Most hierarchical clusters belong to agglomerative hierarchical clustering, which differ only in the definition of similarity between clusters. The four widely used methods for measuring the distance between clusters are as follows:
 
-![](./img/ch2/2-20.gif)
+![](img/ch2/2-20.gif)
 
 Here is the flow of the condensed hierarchical clustering algorithm using the minimum distance:
 
@@ -2135,7 +2148,7 @@ In 1965, Professor Zade of the University of California, Berkeley, first propose
 
 The FCM algorithm is an algorithm that determines the degree to which each data point belongs to a certain cluster degree by membership degree. This clustering algorithm is an improvement of the traditional hard clustering algorithm.
 
-![](./img/ch2/2-21.gif)
+![](img/ch2/2-21.gif)
 
 Algorithm flow:
 
@@ -2155,7 +2168,7 @@ In the experiment, IRIS [13] data set in the international UCI database dedicate
 
 Based on the previous algorithm principles and algorithm flow, the programming operation is performed by matlab, and the clustering results shown in Table 1 are obtained.
 
-![](./img/ch2/2-22.gif)
+![](img/ch2/2-22.gif)
 
 As shown in Table 1, for the four clustering algorithms, compare them in three aspects:
 
@@ -2175,7 +2188,7 @@ The same point between GBDT and random forest:
 
 Differences between GBDT and random forests:
 1. The tree that constitutes a random forest can be a classification tree or a regression tree; and GBDT consists only of regression trees.
-2, the trees that make up the random forest can be generated in parallel; and GBDT can only be serially generated
+2. the trees that make up the random forest can be generated in parallel; and GBDT can only be serially generated
 3. For the final output, random forests use majority voting, etc.; while GBDT accumulates all results, or weights up and accumulate
 4. Random forest is not sensitive to outliers, GBDT is very sensitive to outliers
 5. Random forests treat training sets equally, and GBDT is a weak classifier based on weights.
